@@ -12,7 +12,6 @@ int main()
     int circle_x{175};
     int circle_y{100};
 
-
     SetTargetFPS(60);
 
     while (true)
@@ -28,7 +27,6 @@ int main()
         if (IsKeyDown(KEY_D))
         {
             circle_x += 10;
-
         }
         // game logic ends
         EndDrawing();
