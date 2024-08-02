@@ -18,16 +18,21 @@ int main()
     {
 
         BeginDrawing();
-        ClearBackground(RED);
+        ClearBackground(WHITE);
 
         // game logic begins
 
         DrawCircle(circle_x, circle_y, 25, BLUE);
 
+        if (IsKeyDown(KEY_A))
+        {
+            circle_x -= 10;
+        }
         if (IsKeyDown(KEY_D))
         {
             circle_x += 10;
         }
+
         // game logic ends
         EndDrawing();
     }
